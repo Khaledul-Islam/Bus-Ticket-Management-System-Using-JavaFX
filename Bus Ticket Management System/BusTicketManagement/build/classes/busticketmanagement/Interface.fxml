@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busticketmanagement.InterfaceController">
+  <children>
+    <BorderPane prefHeight="500.0" prefWidth="782.0">
+      <center>
+        <Pane prefHeight="427.0" prefWidth="718.0">
+          <children>
+            <AnchorPane layoutX="38.0" layoutY="58.0" prefHeight="355.0" prefWidth="740.0">
+              <children>
+                <GridPane layoutX="61.0" layoutY="14.0" prefHeight="297.0" prefWidth="544.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.99981689453125" prefWidth="213.0" text="Journey From" textAlignment="CENTER" GridPane.rowIndex="0">
+                      <font>
+                        <Font size="17.0" fx:id="x3" />
+                      </font>
+                    </Label>
+                    <Label prefHeight="24.0" prefWidth="26.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                      <font>
+                        <Font size="15.0" fx:id="x2" />
+                      </font>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="44.99981689453125" prefWidth="213.0" text="Journey To" textAlignment="CENTER" GridPane.rowIndex="1" />
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="44.99981689453125" prefWidth="213.0" text="Journey Date" textAlignment="CENTER" GridPane.rowIndex="2" />
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="44.99981689453125" prefWidth="213.0" text="Class" textAlignment="CENTER" GridPane.rowIndex="3" />
+                    <Label font="$x2" prefHeight="24.0" prefWidth="26.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <Label font="$x2" prefHeight="24.0" prefWidth="26.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Label font="$x2" prefHeight="24.0" prefWidth="26.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <Button fx:id="SearchBus" mnemonicParsing="false" onAction="#HandleSearchBus" prefHeight="45.0" prefWidth="123.0" text="Search Bus" textFill="BLACK" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                      <font>
+                        <Font name="System Bold" size="15.0" />
+                      </font>
+                    </Button>
+                              <TextField fx:id="email" prefHeight="21.0" prefWidth="230.0" promptText="Email" visible="false" GridPane.rowIndex="5" />
+                              <ComboBox fx:id="JFCombo" prefHeight="36.0" prefWidth="299.0" promptText="Select Departure" GridPane.columnIndex="2" />
+                              <ComboBox fx:id="JTCombo" prefHeight="36.0" prefWidth="299.0" promptText="Select Destinatuon" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <ComboBox fx:id="CCombo" prefHeight="36.0" prefWidth="299.0" promptText="Select Class" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="44.99981689453125" prefWidth="213.0" text="Ticket Quantities" textAlignment="CENTER" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="TQCombo" prefHeight="37.0" prefWidth="299.0" promptText="Select Ticket Quantities" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <TextField fx:id="JourneyDate" prefHeight="40.0" prefWidth="301.0" promptText="DD/MM/YYYY" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="230.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="11.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.0" minWidth="10.0" prefWidth="300.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+                        <TextField fx:id="pass" layoutX="33.0" layoutY="323.0" prefHeight="25.0" prefWidth="227.0" promptText="Password" visible="false" />
+                        <Button fx:id="btn2" layoutX="42.0" layoutY="312.0" mnemonicParsing="false" onAction="#Handlebtn2" prefHeight="47.0" prefWidth="105.0" text="Log as" textAlignment="CENTER" visible="false" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+              </children>
+            </AnchorPane>
+            <Pane layoutX="90.0" layoutY="6.0" prefHeight="44.99980844726815" prefWidth="601.9998779296875">
+              <children>
+                <Button fx:id="DashBoard" alignment="CENTER" layoutX="-2.0" mnemonicParsing="false" onAction="#HandleDashBoard" prefHeight="45.0" prefWidth="10.0" visible="false">
+                  <font>
+                    <Font name="System Bold" size="13.0" fx:id="x1" />
+                  </font>
+                </Button>
+                <Button fx:id="PurTic" defaultButton="true" font="$x1" mnemonicParsing="false" onAction="#HandlePurTic" prefHeight="45.0" prefWidth="142.0" text="Purchase Ticket" />
+                <Button fx:id="PurHis" font="$x1" layoutX="142.0" mnemonicParsing="false" onAction="#HandlePurHis" prefHeight="45.0" prefWidth="138.0" text="Purchase History" />
+                <Button id="Userprofilr" fx:id="Userprofile" font="$x1" layoutX="280.0" mnemonicParsing="false" onAction="#HandleUserProfile" prefHeight="45.0" prefWidth="113.0" text="User Profile" />
+                <Button fx:id="ContactUs" font="$x1" layoutX="393.0" mnemonicParsing="false" onAction="#HandleContactUs" prefHeight="45.0" prefWidth="105.0" text="Contact Us" />
+                        <Button fx:id="Signout" font="$x1" layoutX="498.0" mnemonicParsing="false" onAction="#HandleSignout" prefHeight="45.0" prefWidth="105.0" text="Sign Out" />
+              </children>
+            </Pane>
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <Pane prefHeight="73.0" prefWidth="681.0">
+          <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="764.0" text="BANGLADESH BUS E-TICKETING SERVICE">
+              <font>
+                <Font name="Century" size="33.0" />
+              </font>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+            </Label>
+          </children>
+        </Pane>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

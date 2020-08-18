@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBus.AddNewBusController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="753.0">
+         <children>
+            <Button fx:id="ublTOAdmin" layoutX="5.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleublADmin" prefHeight="45.0" prefWidth="78.0" text="⮜">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="103.0" layoutY="2.0" prefHeight="59.0" prefWidth="617.0" text="Add New Bus " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="79.0" prefHeight="464.0" prefWidth="797.0">
+         <children>
+            <GridPane layoutY="47.0" prefHeight="246.0" prefWidth="764.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="127.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="1.0" prefWidth="18.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="43.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="122.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="3.0" prefWidth="15.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="245.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Number">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Departure" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Destination" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Coach Type" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Class" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="BusNo" alignment="CENTER" prefHeight="37.0" prefWidth="192.0" promptText="Insert New Bus Number" GridPane.columnIndex="2" />
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Total Seat" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Schedule" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Journey Time" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Driver" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="41.0" prefWidth="147.0" text="Bus Color" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="5">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="15.0" text=":" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TotalSeat" alignment="CENTER" prefHeight="37.0" prefWidth="192.0" promptText="Insert Total Seat" GridPane.columnIndex="6" />
+                  <TextField fx:id="Jtime" alignment="CENTER" prefHeight="37.0" prefWidth="192.0" promptText="Input Journey Time" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <TextField fx:id="BusDriver" alignment="CENTER" prefHeight="37.0" prefWidth="192.0" promptText="Enter Bus Driver Name" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <TextField fx:id="Bcolor" alignment="CENTER" prefHeight="37.0" prefWidth="192.0" promptText="Enter Bus Color" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="BusDep" prefHeight="49.0" prefWidth="192.0" promptText="Select Departure" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <ComboBox fx:id="BusDes" prefHeight="49.0" prefWidth="192.0" promptText="Select Destination" />
+                     </children>
+                  </FlowPane>
+                  <ComboBox fx:id="CoachType" prefHeight="49.0" prefWidth="192.0" promptText="Select Coach  Type" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="BusClass" prefHeight="49.0" prefWidth="192.0" promptText="Select Bus Class" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="BusSchedule" prefHeight="49.0" prefWidth="245.0" promptText="Select Schedule" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Pane layoutX="22.0" layoutY="293.0" prefHeight="164.0" prefWidth="753.0">
+               <children>
+                  <Button fx:id="BusAddbtn" layoutX="268.0" layoutY="28.0" mnemonicParsing="false" onAction="#HandleBusAddbtn" prefHeight="49.0" prefWidth="137.0" text="ADD">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

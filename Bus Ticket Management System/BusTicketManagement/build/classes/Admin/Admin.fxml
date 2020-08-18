@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <Button fx:id="AllBus" blendMode="DARKEN" defaultButton="true" layoutX="8.0" layoutY="81.0" mnemonicParsing="false" onAction="#HandleAllBus" prefHeight="87.0" prefWidth="127.0" text="ALL BUS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="deletebus" blendMode="DARKEN" layoutX="8.0" layoutY="254.0" mnemonicParsing="false" onAction="#HandleDeleteBus" prefHeight="94.0" prefWidth="127.0" text="DELETE BUS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="addAdmin" blendMode="DARKEN" layoutX="8.0" layoutY="346.0" mnemonicParsing="false" onAction="#HandleAddAdmin" prefHeight="88.0" prefWidth="127.0" text="ADD ADMIN">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddBus" blendMode="DARKEN" layoutX="8.0" layoutY="166.0" mnemonicParsing="false" onAction="#HandleAddBus" prefHeight="90.0" prefWidth="127.0" text="ADD BUS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Pane layoutX="132.0" layoutY="24.0" prefHeight="418.0" prefWidth="888.0">
+         <children>
+            <TableView fx:id="table" layoutX="1.0" layoutY="57.0" prefHeight="353.0" prefWidth="872.0">
+              <columns>
+                <TableColumn fx:id="busno" prefWidth="85.0" text="Bus Number" />
+                <TableColumn fx:id="root" prefWidth="147.0" text="Root" />
+                  <TableColumn fx:id="destination" prefWidth="85.0" text="Destination" />
+                  <TableColumn fx:id="clas" prefWidth="56.0" text="Class" />
+                  <TableColumn fx:id="totalSeat" text="Total Seat" />
+                  <TableColumn fx:id="busSchedule" prefWidth="84.0" text="Bus Schedule" />
+                  <TableColumn fx:id="jdate" prefWidth="99.0" text="Journey Time" />
+                  <TableColumn fx:id="busDriver" prefWidth="88.0" text="Bus Driver" />
+                  <TableColumn fx:id="Bcolor" prefWidth="71.0" text="Bus Color" />
+                  <TableColumn fx:id="Ctype" prefWidth="72.0" text="Coach Type" />
+              </columns>
+            </TableView>
+            <Button fx:id="SignOutAdmin" blendMode="SRC_ATOP" layoutX="734.0" layoutY="11.0" mnemonicParsing="false" onAction="#HandleSignOutAdmin" prefHeight="38.0" prefWidth="127.0" text="Sign Out">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="refresh" blendMode="SRC_ATOP" layoutX="590.0" layoutY="11.0" mnemonicParsing="false" onAction="#refresh" prefHeight="38.0" prefWidth="127.0" text="Refresh">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="152.0" layoutY="-8.0" prefHeight="58.0" prefWidth="308.0" text="Admin Pannel">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

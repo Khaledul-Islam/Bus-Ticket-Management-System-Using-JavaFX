@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="409.9999000000025" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busticketmanagement.FXMLController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <FlowPane layoutX="14.0" layoutY="49.0" prefHeight="267.0" prefWidth="266.0">
+      <children>
+        <Label alignment="CENTER" minHeight="16.0" prefHeight="78.0" prefWidth="259.0" text="Welcome to Bus Service" textAlignment="LEFT" wrapText="false">
+          <font>
+            <Font name="System Bold" size="20.0" />
+          </font>
+        </Label>
+        <Label alignment="CENTER" prefHeight="16.0" prefWidth="259.0" text="      Buy Bus Tickets Anytime from Anywhere" textAlignment="CENTER" underline="false" wrapText="false" />
+        <Label alignment="CENTER" prefHeight="16.0" prefWidth="259.0" text="    Pay by Credit Card,Mobile Banking or Cash" textAlignment="CENTER" underline="false" wrapText="false" />
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="259.0" text="Choose your origin, destination, journey dates and search for buses" textAlignment="CENTER" underline="false" wrapText="true" />
+        <Label alignment="CENTER" prefHeight="24.0" prefWidth="259.0" text="   Select your desired trip and choose your seats" textAlignment="CENTER" underline="false" wrapText="true" />
+        <Label alignment="CENTER" prefHeight="24.0" prefWidth="259.0" text="Do not have account ?" textAlignment="CENTER" underline="false" wrapText="true" />
+      </children>
+    </FlowPane>
+    <Button fx:id="signUp" alignment="CENTER" blendMode="EXCLUSION" cache="true" cacheHint="DEFAULT" contentDisplay="TOP" layoutX="94.0" layoutY="268.0" mnemonicParsing="false" onAction="#HandleSignUp" prefHeight="38.0" prefWidth="86.0" text="SignUp" textOverrun="ELLIPSIS">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+    </Button>
+    <VBox layoutX="338.0" layoutY="49.0" prefHeight="287.0" prefWidth="250.0">
+      <children>
+        <Label alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="53.0" prefWidth="250.0" text="Sign In" textAlignment="CENTER">
+          <font>
+            <Font name="System Bold" size="25.0" />
+          </font>
+        </Label>
+        <TextField fx:id="txtUsername" alignment="CENTER" disable="false" editable="true" focusTraversable="true" mouseTransparent="false" opacity="1.0" prefHeight="38.0" prefWidth="250.0" promptText="Email Address" visible="true">
+          <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </VBox.margin>
+        </TextField>
+        <PasswordField id="txtUsername" fx:id="txtPassword" alignment="CENTER" prefHeight="38.0" prefWidth="230.0" promptText="Enter Password">
+          <VBox.margin>
+            <Insets left="20.0" right="20.0" fx:id="x1" />
+          </VBox.margin>
+        </PasswordField>
+        <GridPane alignment="CENTER" prefHeight="16.0" prefWidth="230.0">
+          <children>
+            <RadioButton id="sadmin" fx:id="AdminToggle" mnemonicParsing="false" selected="false" text="Admin" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <font>
+                <Font size="13.0" fx:id="x3" />
+              </font>
+              <toggleGroup>
+                <ToggleGroup fx:id="Actor" />
+              </toggleGroup>
+              <GridPane.margin>
+                <Insets left="50.0" top="15.0" />
+              </GridPane.margin>
+            </RadioButton>
+            <RadioButton id="sid" fx:id="UserToggle" font="$x3" mnemonicParsing="false" selected="true" text="User" toggleGroup="$Actor" GridPane.columnIndex="1" GridPane.rowIndex="0">
+              <GridPane.margin>
+                <Insets left="20.0" top="15.0" />
+              </GridPane.margin>
+            </RadioButton>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <Button id="HandleLog" fx:id="btnSignin" font="$x2" mnemonicParsing="false" onAction="#HandleLog" prefHeight="38.0" prefWidth="250.0" text="Login" textAlignment="CENTER">
+          <VBox.margin>
+            <Insets left="70.0" right="70.0" top="15.0" />
+          </VBox.margin>
+        </Button>
+        <Label fx:id="lblErrors" alignment="CENTER" contentDisplay="CENTER" prefWidth="230.0" text="" textAlignment="CENTER" textOverrun="CLIP">
+          <VBox.margin>
+            <Insets left="20.0" right="20.0" top="5.0" />
+          </VBox.margin>
+        </Label>
+        <Label fx:id="fpass" font="$x3" onMouseClicked="#HandlePassword" prefWidth="100.0" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="true">
+          <VBox.margin>
+            <Insets left="140.0" />
+          </VBox.margin>
+        </Label>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

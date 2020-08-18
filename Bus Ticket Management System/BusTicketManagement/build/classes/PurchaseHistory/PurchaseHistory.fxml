@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PurchaseHistory.PurchaseHistoryController">
+   <children>
+      <Label layoutX="145.0" layoutY="14.0" prefHeight="50.0" prefWidth="544.0" text="Your All Purchase History and Transection">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="pTable" layoutX="89.0" layoutY="144.0" prefHeight="281.0" prefWidth="830.0">
+        <columns>
+          <TableColumn fx:id="Email" prefWidth="75.0" text="Email" />
+          <TableColumn fx:id="Date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="Bus_Number" prefWidth="75.0" text="Bus_Number" />
+            <TableColumn fx:id="Bus_From" prefWidth="75.0" text="Bus_From" />
+            <TableColumn fx:id="Bus_To" prefWidth="75.0" text="Bus_To" />
+            <TableColumn fx:id="Bus_Class" prefWidth="75.0" text="Bus_Class" />
+            <TableColumn fx:id="Time" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="Number_of_Tickets" prefWidth="75.0" text="Number_of_Tickets" />
+            <TableColumn fx:id="Account_Number" prefWidth="75.0" text="Account_Number" />
+            <TableColumn fx:id="Total_Price" prefWidth="75.0" text="Total_Price" />
+            <TableColumn fx:id="Ticket_Number" prefWidth="75.0" text="Ticket_Number" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

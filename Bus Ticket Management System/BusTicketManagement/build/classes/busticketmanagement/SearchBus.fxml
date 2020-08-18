@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busticketmanagement.SearchBusController">
+   <children>
+      <AnchorPane fx:id="anchor1" layoutX="11.0" layoutY="14.0">
+         <children>
+            <HBox layoutX="146.0" layoutY="89.0" prefHeight="33.0" prefWidth="563.0">
+               <children>
+                  <Label fx:id="passRoute" alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="119.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="224.0" layoutY="85.0" prefHeight="33.0" prefWidth="92.0" text=":::: to ::::">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passDes" alignment="CENTER" prefHeight="33.0" prefWidth="99.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="385.0" layoutY="10.0" prefHeight="33.0" prefWidth="74.0" text="::::Class::::">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passcls" alignment="CENTER" prefHeight="33.0" prefWidth="43.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="69.0" text="::::Ticket::::">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passTicket" prefHeight="32.0" prefWidth="68.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="rTable" layoutX="119.0" layoutY="154.0" prefHeight="187.0" prefWidth="618.0">
+              <columns>
+                <TableColumn fx:id="BusNumber" prefWidth="135.0" text="Bus Number" />
+                <TableColumn fx:id="BusSchedule" prefWidth="187.0" text="Schedule" />
+                  <TableColumn fx:id="JourneyTime" prefWidth="142.0" text="Time" />
+                  <TableColumn fx:id="CoachType" prefWidth="148.0" text="Seat Type" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnPurchase" layoutX="322.0" layoutY="414.0" mnemonicParsing="false" onAction="#HandlePurchaseBtn" prefHeight="46.0" prefWidth="150.0" text="Purchase" visible="false" />
+            <Button fx:id="HandleClick" layoutX="120.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#HandleClickMouse" prefHeight="164.0" prefWidth="618.0" text="Show Available Bus">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Jdate" layoutY="191.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+            <Label layoutX="201.0" layoutY="24.0" prefHeight="65.0" prefWidth="392.0" text="Showing Result  For" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <TextField fx:id="BusNoTF" layoutX="3.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="BustimeTF" layoutX="11.0" layoutY="103.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+      <TextField fx:id="BusScheTF" layoutX="11.0" layoutY="58.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+      <TextField fx:id="BusSeatTypeTF" layoutX="11.0" layoutY="156.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+      <TextField fx:id="NameTF" layoutX="11.0" layoutY="249.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+      <AnchorPane fx:id="anchor2" layoutX="134.0" layoutY="33.0" prefHeight="480.0" prefWidth="642.0">
+         <children>
+            <HBox layoutX="8.0" layoutY="8.0" prefHeight="39.0" prefWidth="497.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="79.0" prefWidth="498.0" text="Select Your Payment Option">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane layoutX="69.0" layoutY="82.0" prefHeight="230.0" prefWidth="374.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="36.0" minHeight="6.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="7.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnBkash" mnemonicParsing="false" onAction="#HandleBkash" prefHeight="76.0" prefWidth="190.0" text="BKash" />
+                  <Button fx:id="btnCard" mnemonicParsing="false" onAction="#HandleCard" prefHeight="76.0" prefWidth="190.0" text="Master Card / Visa" GridPane.columnIndex="1" />
+                  <TextField fx:id="bkashNumber" prefHeight="34.0" prefWidth="188.0" promptText="Enter BKash Number" GridPane.rowIndex="1" />
+                  <TextField fx:id="totalPrice" editable="false" prefHeight="39.0" prefWidth="188.0" promptText="Price" GridPane.rowIndex="2" />
+                  <TextField fx:id="bkashPin" prefHeight="40.0" prefWidth="187.0" promptText="Enter BKash Pin" GridPane.rowIndex="3" />
+                  <TextField fx:id="CardNumber" prefHeight="34.0" prefWidth="188.0" promptText="Enter CardNumber" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="CardCVV" prefHeight="41.0" prefWidth="187.0" promptText="Enter CVV" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="CardPin" prefHeight="52.0" prefWidth="187.0" promptText="Enter Pin" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="totalPriceCard" editable="false" prefHeight="39.0" prefWidth="188.0" promptText="Price" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnConfirmPurchase" layoutX="163.0" layoutY="346.0" mnemonicParsing="false" onAction="#ConfirmPurchase" prefHeight="65.0" prefWidth="200.0" text="Confirm Purchase">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="11.0" layoutY="23.0" mnemonicParsing="false" onAction="#backtointerface" prefHeight="53.0" prefWidth="99.0" text="⮜">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
